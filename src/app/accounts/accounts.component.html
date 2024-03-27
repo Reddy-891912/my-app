@@ -1,0 +1,28 @@
+<div class="container">
+    <div>
+        <label for="">Search :</label>
+        <input type="text" [(ngModel)]="term" (keyup)="filter()">
+        <table class="table table-stripped table-dark">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>account_name</th>
+                    <th>available_balance</th>
+                    <th>account_number</th>
+                    <th>city</th>
+                    <th>profie_picture</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let account of accounts">
+                    <td>{{account.id}}</td>
+                    <td>{{account.account_name}}</td>
+                    <td>{{account.available_balance}}</td>
+                    <td>{{account.account_number}}</td>
+                    <td>{{account.city}}</td>
+                    <td><img src="{{account.profie_picture}}" alt="" height="100px" width="100px"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

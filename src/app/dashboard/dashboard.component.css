@@ -1,0 +1,36 @@
+.parent {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(36, 138, 179, 0.862);
+}
+
+.left {
+    width: 20%;
+    height: 100%;
+    padding: 10px;
+    /* background-color: black; */
+    color: black;
+    text-align: center;
+    overflow: auto;
+
+}
+
+.right {
+    width: 80%;
+    height: 100%;
+    /* background-color: teal; */
+    overflow: auto;
+}
+
+.btn {
+    height: 50px;
+    width: 145px;
+    border: 3%;
+    border-radius: 5px;
+}
+
+.home {
+    cursor: pointer;
+    /* color: brown; */
+}

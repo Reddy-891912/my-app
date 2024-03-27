@@ -1,0 +1,64 @@
+<div class="container">
+    <div class="left">
+        <div class="p-2 m-0 border-0 bd-example m-0 border-0">
+            <input type="text" placeholder="search" [(ngModel)]="searchText">
+            <button type="button" class="btn btn-primary mt-2" (click)="freeDelivery()">Only Free Delivery</button><br>
+            <button type="button" class="btn btn-warning" (click)="priceLowToHigh()">price low to high</button>
+            <button type="button" class="btn btn-warning" (click)="priceHighToLow()">price high to low</button>
+            <button type="button" class="btn btn-warning" (click)="rateLowToHigh()">rating low to high</button>
+            <button type="button" class="btn btn-warning" (click)="rateHighToLow()">rating high to low</button><br>
+            <button type="button" class="btn btn-info" (click)="applyDiscount()">apply 50% discount</button>
+            <button type="button" class="btn btn-info" (click)="priceWithDeliveryCharges()">price with delivery
+                charges</button><br>
+            <button type="button" class="btn btn-dark" (click)="totalPrice()">total price</button>
+            <button type="button" class="btn btn-dark" (click)="totalCartItems()">total cart items</button>
+        </div>
+    </div>
+    <div class="right p-2">
+        <div class="form-group">
+            <label for="" class="form-label">Name:</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label for="" class="form-label">Price:</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label for="" class="form-label">Rating</label>
+            <input type="text">
+        </div>
+        <div class="form-group">
+            <label for="" class="form-label">Free Delivery</label>
+            <input type="radio">
+            <label for="" class="form-label">Yes</label>
+            <input type="radio">
+            <label for="" class="form-label">No</label>
+            
+        </div>
+        <button class="btn btn-light">Add Cart</button>
+    </div>
+</div>
+<div class="p-2 m-0 border-0">
+    <table class="table table-dark table-stripped">
+        <thead>
+            <tr>
+                <th>S.NO </th>
+                <th>Product Name </th>
+                <th>Price </th>
+                <th>Rating </th>
+                <th>Free Delivery </th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products | filter:searchText">
+                <td></td>
+                <td>{{product.productName}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.rating}}</td>
+                <td>{{product.freeDelivery}}</td>
+                <td><button type="button" class="btn btn-danger">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

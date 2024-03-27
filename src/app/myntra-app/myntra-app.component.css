@@ -1,0 +1,55 @@
+.range {
+    margin-top: 20px;
+    margin-left: 81%;
+}
+
+.left-container {
+    height: 50%;
+    width: 20%;
+    margin-top: 20px;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.right-container {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.card{
+    height: 380px;
+    width: 200px;
+    margin: 20px;
+    /* overflow: auto; */
+}
+
+.ttle {
+    overflow: auto;
+    font-size: 15px;
+}
+
+.rate {
+    height: 30px;
+    width: 50px;
+    font-size: 10px;
+    background-color: rgb(223, 219, 219);
+    bottom: 45px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: green;
+}
+
+.ctgy {
+    margin-top: -45px;
+}
+
+.main{
+    display: flex;
+}

@@ -1,0 +1,5 @@
+<div class="container col sm p-2">
+    <div class="row" *ngFor="let product of gmailProducts">
+        <p [ngStyle]="{color:product.completed==true?'black':'red'}">{{product.id}}. {{product.title}}</p>
+    </div>
+</div>

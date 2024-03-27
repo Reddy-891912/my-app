@@ -1,0 +1,62 @@
+<div class="parent m-2">
+    <h1>Create User Form</h1>
+    <form [formGroup]="userForm">
+        <label for="">Name:</label>
+        <input type="text" formControlName="name">
+        <br>
+        <label for="">Age:</label>
+        <input type="number" formControlName="age">
+        <br>
+        <label for="">Phone:</label>
+        <input type="number" formControlName="phone">
+        <br>
+        <label for="">Email:</label>
+        <input type="email" formControlName="email">
+        <br>
+        <div formGroupName="address">
+            <label for="">City:</label>
+            <input type="text" formControlName="city">
+            <br>
+            <label for="">Pin:</label>
+            <input type="number" formControlName="pin">
+        </div>
+        <br>
+        <button class="btn btn-info" (click)="add()">Add Card</button>
+        <br>
+        <div formArrayName="cards">
+            <div *ngFor="let card of cardFormsArray.controls; let i=index">
+                <div formGroupName="{{i}}">
+                    <h1>Card{{i+1}}</h1>
+                    <label for="">Number:</label>
+                    <input type="number" formControlName="number">
+                    <br>
+                    <label for="">Expiry:</label>
+                    <input type="month" formControlName="expiry">
+                    <br>
+                    <label for="">CVV:</label>
+                    <input type="number" formControlName="cvv">
+                    <br><br>
+                    <button class="btn btn-warning" (click)="delete(i)">Delete</button>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div>
+            <label for="">Type :</label>
+            <input type="radio">
+            <label for="">Days Scholor</label>
+            <input type="radio">
+            <label for="">Residential</label>
+            <br>
+            <label for="">Bus Fee :</label>
+            <input type="number">
+            <br>
+            <label for="">Hostel Fee :</label>
+            <input type="number">
+        </div>
+        <br>
+        <button class="btn btn-primary" (click)="submit()">Submit</button>
+    </form>
+</div>

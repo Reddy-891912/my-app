@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="p-2 m-0 border-0 bd-example m-0 border-0">
+        <input type="text" placeholder="search" (keypress)="searchFilter()" [(ngModel)]="term"><br>
+
+        <select name="" id="" (change)="manufacture()" [(ngModel)]="term1">
+            <option value="">Manufacture</option>
+            <option value="{{vehicle.manufacturer}}" *ngFor="let vehicle of vehicles">{{vehicle.manufacturer}}</option>
+        </select>
+
+        <select name="" id="" (change)="fuel()" [(ngModel)]="term2">
+            <option value="">Fuel</option>
+            <option value="{{vehicle.fuel}}" *ngFor="let vehicle of vehicles">{{vehicle.fuel}}</option>
+        </select>
+
+        <select name="" id="" (change)="colour()" [(ngModel)]="term3">
+            <option value="">Color</option>
+            <option value="{{vehicle.color}}" *ngFor="let vehicle of vehicles">{{vehicle.color}}</option>
+        </select>
+
+        <select name="" id="" (change)="type()" [(ngModel)]="term4">
+            <option value="">Type</option>
+            <option value="{{vehicle.type}}" *ngFor="let vehicle of vehicles">{{vehicle.type}}</option>
+        </select><br>
+        <button type="button" class="btn btn-warning" (click)="priceLowToHigh()">price low to high</button>
+        <button type="button" class="btn btn-warning" (click)="priceHighToLow()">price high to low</button>
+        <label for="">From:</label>
+        <input type="number" [(ngModel)]="from">
+        <label for="">To:</label>
+        <input type="number" [(ngModel)]="to">
+        <button (click)="range()" class="btn btn-light">Price Range</button>
+    </div>
+    <div class="p-2 m-0 border-0"></div>
+    <table class="table table-dark table-stripped">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Vehicle</th>
+                <th>manufacturer</th>
+                <th>model</th>
+                <th>type</th>
+                <th>fuel</th>
+                <th>color</th>
+                <th>image</th>
+                <th>cost</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let vehicle of vehicles; let i=index;">
+                <td>{{vehicle.id}}</td>
+                <td>{{vehicle.Vehicle}}</td>
+                <td>{{vehicle.manufacturer}}</td>
+                <td>{{vehicle.model}}</td>
+                <td>{{vehicle.type}}</td>
+                <td>{{vehicle.fuel}}</td>
+                <td>{{vehicle.color}}</td>
+                <td><img src="{{vehicle.image}}" alt="" height="50px" width="50px"></td>
+                <td>{{vehicle.cost}}</td>
+                <td><button class="btn btn-danger" (click)="delete(i)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

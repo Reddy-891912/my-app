@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div class="top-container">
+            <nav class="first-navbar">
+                <label for="" class="range">Price Range:</label>
+                <select name="" id="">
+                    <option value="">ALL</option>
+                    <option value="" (click)="highToLow()">High to low</option>
+                    <option value="">Low to high</option>
+                </select>
+            </nav>
+        </div>
+        <div class="main p-2">
+            <div class="left-container">
+                <nav class="second-navbar">
+                    <h4 class="filter">Filter</h4>
+                    <h5>Category</h5>
+                    <input type="checkbox">men's clothing<br>
+                    <input type="checkbox">jewelery<br>
+                    <input type="checkbox">electronics<br>
+                    <input type="checkbox">women's clothing
+                    <br><br>
+                    <h5>Price</h5>
+                    <input type="checkbox">Rs.5 to Rs.50<br>
+                    <input type="checkbox">Rs.50 to Rs.300<br>
+                    <input type="checkbox">Rs.300 to Rs.600<br>
+                    <input type="checkbox">Rs.600 to Rs.1000
+                </nav>
+            </div>
+            <div class="right-container">
+                <div class="card" *ngFor="let product of myntraProducts">
+                    <p><img src={{product.image}} alt="" height="240px" width="190pxpx"></p>
+                    <h6 class="rate">{{product.rating.rate}}<i class="fa-solid fa-star"></i>{{product.rating.count}}
+                    </h6>
+                    <h6 class="ctgy">{{product.category}}</h6>
+                    <h6 class="ttle">{{product.title}}</h6>
+                    <h6>Rs.{{product.price}}</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

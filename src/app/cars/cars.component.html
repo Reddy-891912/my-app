@@ -1,0 +1,13 @@
+<div class="abc">
+    <h4>Cars</h4>
+    <label for="">Honda</label>
+    <input type="radio" name="cars" (click)="honda()">
+    <label for="">BMW</label>
+    <input type="radio" name="cars" (click)="bmw()">
+    <label for="">AUDI</label>
+    <input type="radio" name="cars" (click)="audi()">
+
+    <p *ngIf="isHonda"><img src="/assets/honda.jpeg" alt="" height="300px" width="300px"></p>
+    <p *ngIf="isBmw"><img src="/assets/bmw.jpeg" alt="" height="300px" width="300px"></p>
+    <p *ngIf="isAudi"><img src="/assets/audi.jpeg" alt="" height="300px" width="300px"></p>
+</div>

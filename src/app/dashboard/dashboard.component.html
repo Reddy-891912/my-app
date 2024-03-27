@@ -1,0 +1,31 @@
+<div class="parent col sm p-1">
+    <div class="left p-3 m-0 border-0 bd-example m-0 border-0">
+        <h1>My Website<span class="myWebsite"></span></h1>
+        <hr>
+        <h5 routerLink="home" routerLinkActive="active-link" class="home">Home</h5>
+        <h5 routerLink="about" class="home">About</h5>
+        <h5 routerLink="dataBinding" class="home">Data Binding</h5>
+        <h5 routerLink="calculator" class="home">Calculator</h5>
+        <h5 routerLink="rectangle" class="home">Rectanlge</h5>
+        <h5 routerLink="circle" class="home">Circle</h5>
+        <h5 routerLink="bmi" class="home">BMI</h5>
+        <h5 routerLink="products" class="home">Products</h5>
+        <h5 routerLink="vehicles" class="home">Vehicles</h5>
+        <h5 routerLink="cars" class="home">Cars</h5>
+        <h5 routerLink="myntra" class="home">Myntra App</h5>
+        <h5 routerLink="bikes" class="home">Bikes</h5>
+        <h5 routerLink="accounts" class="home">Accounts</h5>
+        <h5 routerLink="refresh" class="home">Refresh</h5>
+        <h5 routerLink="flipcart" class="home">Flipcart</h5>
+        <h5 routerLink="gmail" class="home">Gmail</h5>
+        <h5 routerLink="createBike" class="home">Create Bike</h5>
+        <h5 routerLink="createAccount" class="home">Create Account</h5>
+        <h5 routerLink="memes" class="home">Gallery Memes</h5>
+        <h5 routerLink="createUser" class="home">Create User</h5>
+        <h5 routerLink="formsTask" class="home">Forms Task</h5>
+        <button class="btn btn-outline-light" (click)="logout()">Logout</button>
+    </div>
+    <div class="right">
+        <router-outlet></router-outlet>
+    </div>
+</div>

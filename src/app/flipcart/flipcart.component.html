@@ -1,0 +1,9 @@
+<div class="parent col sm p-2">
+    <div class="card" *ngFor="let product of flipcartProducts">
+        <p><img src={{product.image}} alt="" height="240px" width="210px"></p>
+        <h6 class="rate">{{product.rating.rate}}<i class="fa-solid fa-star"></i>{{product.rating.count}}</h6>
+        <h6 class="ctgy">{{product.category}}</h6>
+        <h6 class="ttle">{{product.title}}</h6>
+        <h6>Rs.{{product.price}}</h6>
+    </div>
+</div>
