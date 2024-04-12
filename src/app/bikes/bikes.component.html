@@ -1,3 +1,5 @@
+<h1 appImp>Cars Table</h1>
+
 <div class="container">
     <div>
         <input type="text" [(ngModel)]="term" (keyup)="filterBikes()">
@@ -40,6 +42,7 @@
 
         <label for="">Column</label>
         <select name="" id="" [(ngModel)]="queries.sortBy">
+            <option value="cost">cost</option>
             <option value="color">color</option>
             <option value="model">model</option>
         </select>
@@ -53,7 +56,7 @@
         <button class="btn btn-primary" (click)="loadData()">Sort</button>
     </div>
     <div>
-        <table class="table table-stripped table-dark">
+        <table class="table table-success table-bordered">
             <thead>
                 <tr>
                     <th>id</th>
@@ -64,7 +67,7 @@
                     <th>fuel</th>
                     <th>image</th>
                     <th>cost</th>
-                    <th>Actions</th>
+                    <th colspan="3">Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -75,8 +78,10 @@
                     <td>{{bike.model}}</td>
                     <td>{{bike.type}}</td>
                     <td>{{bike.fuel}}</td>
-                    <td><img src="{{bike.image}}" alt="" height="100px" width="100px"></td>
+                    <td><img src="{{bike.image}}" alt="" height="150px" width="150px"></td>
                     <td>{{bike.cost}}</td>
+                    <td><button class="btn btn-primary" (click)="viewBike(bike.id)">View</button></td>
+                    <td><button class="btn btn-warning" (click)="editBike(bike.id)">Edit</button></td>
                     <td><button class="btn btn-danger" (click)="deletedBikes(bike.id)">Delete</button></td>
                 </tr>
             </tbody>

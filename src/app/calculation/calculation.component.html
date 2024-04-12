@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="form-group">
+            <h2><u>Calculator</u></h2>
+            <p>Parent to Child Communication</p>
+            <label for="" class="form-label">a :</label>
+            <input type="number" [(ngModel)]="a">
+            <br>
+            <label for="" class="form-label">b :</label>
+            <input type="number" [(ngModel)]="b">
+        </div>
+        <app-operations [num]="a" [num1]="b" (calcEvent)="catch($event)"></app-operations>
+        <h5>Result :{{result}} </h5>
+    </div>
+</div>

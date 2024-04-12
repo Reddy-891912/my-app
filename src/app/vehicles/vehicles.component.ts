@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-vehicles',
@@ -1006,6 +1007,14 @@ export class VehiclesComponent {
             "id": "90"
         }
     ]
+
+    constructor(private _router:Router){}
+
+    viewVehicle(id: any){
+        this._router.navigateByUrl("/dashboard/vehicleDetails/"+id)
+    }
+
+    eidtVehicle(id:any){}
 
     delete(i: number) {
         this.vehicles.splice(i, 1);

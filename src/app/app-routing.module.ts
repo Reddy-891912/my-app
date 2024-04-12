@@ -25,6 +25,19 @@ import { MemesComponent } from './memes/memes.component';
 import { AuthenticationGuard } from './authentication.guard';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { FormsTaskComponent } from './forms-task/forms-task.component';
+import { ParantComponent } from './parant/parant.component';
+import { CalculationComponent } from './calculation/calculation.component';
+import { RatingComponent } from './rating/rating.component';
+import { ProductsComponent } from './products/products.component';
+import { NavComponent } from './nav/nav.component';
+import { CartComponent } from './cart/cart.component';
+import { ToDoComponent } from './to-do/to-do.component';
+import { ViewEditDeleteComponent } from './view-edit-delete/view-edit-delete.component';
+import { TaskViewParentComponent } from './task-view-parent/task-view-parent.component';
+import { ToDoTaskViewComponent } from './to-do-task-view/to-do-task-view.component';
+import { VehicleDetailsPageComponent } from './vehicle-details-page/vehicle-details-page.component';
+import { BikeDetailsComponent } from './bike-details/bike-details.component';
+import { PipeComponent } from './pipe/pipe.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -40,6 +53,7 @@ const routes: Routes = [
       { path: 'bmi', component: BmiComponent },
       { path: 'products', component: ProductComponent },
       { path: 'vehicles', component: VehiclesComponent },
+      { path: 'vehicleDetails/:id', component: VehicleDetailsPageComponent },
       { path: 'cars', component: CarsComponent },
       { path: 'myntra', component: MyntraAppComponent },
       { path: 'bikes', component: BikesComponent },
@@ -51,7 +65,20 @@ const routes: Routes = [
       { path: 'createAccount', component: CreateAccountComponent },
       { path: 'memes', component: MemesComponent },
       {path:'createUser', component:CreateUserComponent},
-      {path:'formsTask', component:FormsTaskComponent}
+      {path:'formsTask', component:FormsTaskComponent},
+      {path:'parant', component:ParantComponent},
+      {path:'calculation', component:CalculationComponent},
+      {path:'rating', component:RatingComponent},
+      {path:'productSibling', component:ProductsComponent},
+      {path:'nav', component:NavComponent},
+      {path:'cart', component:CartComponent},
+      {path:'toDo', component:ToDoComponent},
+      {path:'viewEditDelete', component:ViewEditDeleteComponent},
+      {path:'taskView', component:ToDoTaskViewComponent},
+      {path:'taskViewParent', component:TaskViewParentComponent},
+      { path: 'bikeDetails/:id', component: BikeDetailsComponent },
+      { path: 'edit-bike/:id', component: CreateBikeComponent },
+      { path: 'pipe', component: PipeComponent },
     ]
   },
   { path: '', component: LoginComponent },

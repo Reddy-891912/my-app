@@ -30,6 +30,25 @@ import { CreateAccountComponent } from './create-account/create-account.componen
 import { MemesComponent } from './memes/memes.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { FormsTaskComponent } from './forms-task/forms-task.component';
+import { ParantComponent } from './parant/parant.component';
+import { ChildComponent } from './child/child.component';
+import { CalculationComponent } from './calculation/calculation.component';
+import { OperationsComponent } from './operations/operations.component';
+import { RatingComponent } from './rating/rating.component';
+import { TextAriaComponent } from './text-aria/text-aria.component';
+import { ProductsComponent } from './products/products.component';
+import { NavComponent } from './nav/nav.component';
+import { CartComponent } from './cart/cart.component';
+import { ToDoComponent } from './to-do/to-do.component';
+import { ViewEditDeleteComponent } from './view-edit-delete/view-edit-delete.component';
+import { TaskViewParentComponent } from './task-view-parent/task-view-parent.component';
+import { ToDoTaskViewComponent } from './to-do-task-view/to-do-task-view.component';
+import { VehicleDetailsPageComponent } from './vehicle-details-page/vehicle-details-page.component';
+import { BikeDetailsComponent } from './bike-details/bike-details.component';
+import { PricePipe } from './price.pipe';
+import { PipeComponent } from './pipe/pipe.component';
+import { ImpDirective } from './imp.directive';
+import { CapitalDirective } from './capital.directive';
 
 @NgModule({
   declarations: [
@@ -57,7 +76,26 @@ import { FormsTaskComponent } from './forms-task/forms-task.component';
     CreateAccountComponent,
     MemesComponent,
     CreateUserComponent,
-    FormsTaskComponent
+    FormsTaskComponent,
+    ParantComponent,
+    ChildComponent,
+    CalculationComponent,
+    OperationsComponent,
+    RatingComponent,
+    TextAriaComponent,
+    ProductsComponent,
+    NavComponent,
+    CartComponent,
+    ToDoComponent,
+    ViewEditDeleteComponent,
+    TaskViewParentComponent,
+    ToDoTaskViewComponent,
+    VehicleDetailsPageComponent,
+    BikeDetailsComponent,
+    PricePipe,
+    PipeComponent,
+    ImpDirective,
+    CapitalDirective,
   ],
   imports: [
     BrowserModule,

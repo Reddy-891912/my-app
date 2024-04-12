@@ -22,7 +22,7 @@ export class CreateAccountComponent {
   )
 
   submit() {
-    console.log(this.accountForm.value);
+    // console.log(this.accountForm.value);
     this._AccountsService.createAccounts(this.accountForm.value).subscribe(
       (data: any) => {
         alert("Account Created Successfully");

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { BikesService } from '../bikes.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-bikes',
@@ -22,7 +23,7 @@ export class BikesComponent {
     order: ""
   };
 
-  constructor(private _bikesService: BikesService) {
+  constructor(private _bikesService: BikesService, private _router: Router) {
 
     _bikesService.getCars().subscribe(
       (data: any) => {
@@ -78,6 +79,14 @@ export class BikesComponent {
         alert("internal server error");
       }
     )
+  }
+
+  viewBike(id: any) {
+    this._router.navigateByUrl("/dashboard/bikeDetails/" + id)
+  }
+
+  editBike(id: any) {
+    this._router.navigateByUrl("/dashboard/edit-bike/" + id)
   }
 
   deletedBikes(id: any) {

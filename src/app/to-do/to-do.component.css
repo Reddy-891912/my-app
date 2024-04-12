@@ -1,0 +1,8 @@
+.card{
+    height: 80vh;
+    width: 25vw;
+    /* padding: 10px; */
+    background-color: orange;
+    font-size: large;
+    margin: 5px;
+}
