@@ -8,10 +8,10 @@ import { ToDoTaskViewService } from '../to-do-task-view.service';
 })
 export class ToDoComponent {
 
-  constructor(private _toDoTaskViewService:ToDoTaskViewService){}
+  constructor(private _toDoTaskViewService: ToDoTaskViewService) { }
 
-  create(){}
+  create() { }
 
-  reset(){}
+  reset() { }
 
 }

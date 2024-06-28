@@ -7,13 +7,13 @@ import { Component } from '@angular/core';
 })
 export class CircleComponent {
 
-    public radius:number=0;
-    public result:number=0;
-  area(){
-    this.result=Math.PI*this.radius*this.radius;
+  public radius: number = 0;
+  public result: number = 0;
+  area() {
+    this.result = Math.PI * this.radius * this.radius;
   };
-  perimetor(){
-    this.result=2*Math.PI*this.radius;
+  perimetor() {
+    this.result = 2 * Math.PI * this.radius;
   };
 
 }

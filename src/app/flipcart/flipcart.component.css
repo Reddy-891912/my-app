@@ -1,4 +1,4 @@
-.parent{
+.parent {
     height: 100%;
     width: 100%;
     background-color: white;
@@ -8,7 +8,7 @@
     overflow: auto;
 }
 
-.card{
+.card {
     height: 380px;
     width: 220px;
     margin: 20px;
@@ -20,16 +20,16 @@
      width: 150px;
 } */
 
-.ttle{
+.ttle {
     overflow: auto;
     font-size: 15px;
 }
 
-.rate{
+.rate {
     height: 30px;
     width: 50px;
     font-size: 10px;
-    background-color:rgb(223, 219, 219);
+    background-color: rgb(223, 219, 219);
     bottom: 45px;
     display: inline-block;
     position: relative;
@@ -37,6 +37,6 @@
     color: green;
 }
 
-.ctgy{
+.ctgy {
     margin-top: -45px;
 }

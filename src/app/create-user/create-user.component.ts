@@ -50,7 +50,7 @@ export class CreateUserComponent {
       new FormGroup({
         number: new FormControl(null, [Validators.required, Validators.min(1000000000000000), Validators.max(9999999999999999)]),
         expiry: new FormControl(),
-        cvv: new FormControl(null, [Validators.required, Validators.maxLength(3), Validators.minLength(3),cvv])
+        cvv: new FormControl(null, [Validators.required, Validators.maxLength(3), Validators.minLength(3), cvv])
       })
     )
   }

@@ -14,5 +14,5 @@ export class TextAriaComponent {
   rating1() {
     this.rating = '/assets/1star.png';
   }
-  
+
 }

@@ -9,19 +9,13 @@ export class RectangleComponent {
 
   public length: number = 0;
   public breadth: number = 0;
-
   public result: number = 0
 
   area() {
     this.result = this.length * this.breadth;
   };
   perimetor() {
-    this.result=2*this.length*this.breadth;
+    this.result = 2 * this.length * this.breadth;
   };
-
-
-
-
-
 
 }

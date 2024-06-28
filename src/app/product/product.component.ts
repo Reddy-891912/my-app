@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ProductComponent {
 
-
   searchText: any;
 
   public products: any = [
@@ -63,7 +62,6 @@ export class ProductComponent {
   totalCartItems() {
     var totalCartItems = this.products.length;
     alert(totalCartItems);
-
   }
 
 }

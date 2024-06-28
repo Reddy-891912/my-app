@@ -8,9 +8,9 @@ describe('TaskViewParentComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TaskViewParentComponent ]
+      declarations: [TaskViewParentComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(TaskViewParentComponent);
     component = fixture.componentInstance;

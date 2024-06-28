@@ -1,14 +1,14 @@
-.container{
+.container {
     display: flex;
     justify-content: space-between;
     margin-left: 0px;
 }
 
-.right{
+.right {
     margin-left: 50px;
 }
 
-label{
+label {
     margin-right: 60px;
     width: 5px;
 }

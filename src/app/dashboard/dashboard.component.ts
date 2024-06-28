@@ -8,9 +8,9 @@ import { Router } from '@angular/router';
 })
 export class DashboardComponent {
 
-  constructor(private _router:Router){}
+  constructor(private _router: Router) { }
 
-  logout(){
+  logout() {
     // removing token
     localStorage.removeItem("my-app-token");
     this._router.navigateByUrl("/login");

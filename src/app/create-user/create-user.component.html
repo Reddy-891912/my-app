@@ -7,7 +7,6 @@
         <div *ngIf="userForm.get('name')?.touched">
             <p class="errors" *ngIf="userForm.get('name')?.errors?.['required']">Name is required</p>
             <p class="errors" *ngIf="userForm.get('name')?.errors?.['minlength']">Minimum 3 letters required</p>
-
         </div>
         <!-- <p>touched:{{userForm.get('name')?.touched}}</p>
         <p>untouched:{{userForm.get('name')?.untouched}}</p>
@@ -69,11 +68,8 @@
                     <div *ngIf="cardFormsArray.controls[i].get('number')?.touched">
                         <p class="errors" *ngIf="cardFormsArray.controls[i].get('number')?.errors?.['required']">Number
                             is required</p>
-
-
                         <p class="errors" *ngIf="cardFormsArray.controls[i].get('number')?.errors?.['min']">Minimum 16
                             digits required</p>
-
                         <p class="errors" *ngIf="cardFormsArray.controls[i].get('number')?.errors?.['max']">Maximum 16
                             digits</p>
                     </div>

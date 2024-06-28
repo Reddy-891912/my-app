@@ -7,13 +7,13 @@ import { Router } from '@angular/router';
     styleUrls: ['./vehicles.component.css']
 })
 export class VehiclesComponent {
-    public term: any=''
-    public term1: any='';
-    public term2: any='';
-    public term3: any='';
-    public term4:any='';
-    public from:any='';
-    public to:any='';
+    public term: any = ''
+    public term1: any = '';
+    public term2: any = '';
+    public term3: any = '';
+    public term4: any = '';
+    public from: any = '';
+    public to: any = '';
 
     public vehicles: any = [
         {
@@ -1008,13 +1008,13 @@ export class VehiclesComponent {
         }
     ]
 
-    constructor(private _router:Router){}
+    constructor(private _router: Router) { }
 
-    viewVehicle(id: any){
-        this._router.navigateByUrl("/dashboard/vehicleDetails/"+id)
+    viewVehicle(id: any) {
+        this._router.navigateByUrl("/dashboard/vehicleDetails/" + id)
     }
 
-    eidtVehicle(id:any){}
+    eidtVehicle(id: any) { }
 
     delete(i: number) {
         this.vehicles.splice(i, 1);
@@ -1036,19 +1036,20 @@ export class VehiclesComponent {
         this.vehicles = this.vehicles.filter((vehicle: any) => vehicle.color.includes(this.term3));
     }
 
-    type(){
-        this.vehicles=this.vehicles.filter((vehicle:any)=>vehicle.type.includes(this.term4));
+    type() {
+        this.vehicles = this.vehicles.filter((vehicle: any) => vehicle.type.includes(this.term4));
     }
 
-    priceLowToHigh(){
-        this.vehicles=this.vehicles.sort((a:any,b:any)=>a.cost-b.cost);
+    priceLowToHigh() {
+        this.vehicles = this.vehicles.sort((a: any, b: any) => a.cost - b.cost);
     }
 
-    priceHighToLow(){
-        this.vehicles=this.vehicles.sort((a:any,b:any)=>b.cost-a.cost);
+    priceHighToLow() {
+        this.vehicles = this.vehicles.sort((a: any, b: any) => b.cost - a.cost);
     }
 
-    range(){
-        this.vehicles=this.vehicles.filter((vehicle:any)=>vehicle.cost>=this.from&&vehicle.cost<=this.to);
+    range() {
+        this.vehicles = this.vehicles.filter((vehicle: any) => vehicle.cost >= this.from && vehicle.cost <= this.to);
     }
+
 }

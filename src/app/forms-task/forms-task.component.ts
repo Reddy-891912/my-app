@@ -8,38 +8,37 @@ import { FormArray, FormControl, FormGroup } from '@angular/forms';
 })
 export class FormsTaskComponent {
 
-  public taskForm:FormGroup=new FormGroup({
-    name:new FormControl(),
-    experience:new FormControl(),
-    experiance:new FormGroup({
-      company:new FormControl(),
-      experiance:new FormControl(),
-      package:new FormControl()
+  public taskForm: FormGroup = new FormGroup({
+    name: new FormControl(),
+    experience: new FormControl(),
+    experiance: new FormGroup({
+      company: new FormControl(),
+      experiance: new FormControl(),
+      package: new FormControl()
     }),
-    skills:new FormArray([])//cards
+    skills: new FormArray([])//cards
   })
 
-  get cardsFormsArray(){
+  get cardsFormsArray() {
     return this.taskForm.get('skills') as FormArray;
   }
 
-  add(){
+  add() {
     this.cardsFormsArray.push(
       new FormGroup({
-        name:new FormControl(),
-        rating:new FormControl(),
-        experiance:new FormControl()
+        name: new FormControl(),
+        rating: new FormControl(),
+        experiance: new FormControl()
       })
     )
   }
 
-  delete(i:number){
+  delete(i: number) {
     this.cardsFormsArray.removeAt(i);
   }
 
-  submit(){
+  submit() {
     console.log(this.taskForm.value);
   }
-  
 
 }
