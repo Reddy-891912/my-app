@@ -12,5 +12,5 @@ export class MemesService {
   getMemesData(): Observable<any> {
     return this._httpClient.get("https://api.imgflip.com/get_memes");
   }
-  
+
 }

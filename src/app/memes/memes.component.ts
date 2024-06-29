@@ -11,7 +11,7 @@ export class MemesComponent {
   public memes: any = {};
 
   constructor(private _memesService: MemesService) {
-   this._memesService.getMemesData().subscribe(
+    this._memesService.getMemesData().subscribe(
       (data: any) => {
         this.memes = data;
         console.log(data);

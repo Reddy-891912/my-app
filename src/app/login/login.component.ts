@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
 
-  constructor(private _LoginService: LoginService, private _router:Router) { }
+  constructor(private _LoginService: LoginService, private _router: Router) { }
 
   public loginForm: FormGroup = new FormGroup(
     {
@@ -22,7 +22,7 @@ export class LoginComponent {
     this._LoginService.login(this.loginForm.value).subscribe(
       (data: any) => {
         // storage toke
-        localStorage.setItem("my-app-token",data.token);
+        localStorage.setItem("my-app-token", data.token);
         // go to dashboard
         this._router.navigateByUrl("/dashboard");
         alert("Login Successfully")

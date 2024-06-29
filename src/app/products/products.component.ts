@@ -8,11 +8,11 @@ import { CommonService } from '../common.service';
 })
 export class ProductsComponent {
 
-  constructor(private _commonService:CommonService){}
+  constructor(private _commonService: CommonService) { }
 
-  ngOnIt():void{}
+  ngOnIt(): void { }
 
-  add(){
+  add() {
     this._commonService.setVal();
   }
 

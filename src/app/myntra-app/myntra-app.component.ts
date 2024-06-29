@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class MyntraAppComponent {
 
-  public grid:any='';
+  public grid: any = '';
   public myntraProducts: any = [
     {
       "id": 1,
@@ -251,8 +251,8 @@ export class MyntraAppComponent {
     }
   ]
 
-  public high:any='';
-  highToLow(){
+  public high: any = '';
+  highToLow() {
     // this.myntraProducts=this.myntraProducts.sort((a:any,b:any)=>b.price-a.price);
   }
 

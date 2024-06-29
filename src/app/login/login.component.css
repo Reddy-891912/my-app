@@ -3,8 +3,10 @@
     width: 100vw;
     background-color: blueviolet;
     display: flex;
-    justify-content: flex-end; /* horizontal */
-    align-items: center; /* verticle */
+    justify-content: flex-end;
+    /* horizontal */
+    align-items: center;
+    /* verticle */
 }
 
 .child {

@@ -22,7 +22,7 @@
     overflow: auto;
 }
 
-.card{
+.card {
     height: 380px;
     width: 200px;
     margin: 20px;
@@ -50,6 +50,6 @@
     margin-top: -45px;
 }
 
-.main{
+.main {
     display: flex;
 }

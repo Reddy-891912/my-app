@@ -20,9 +20,9 @@ export class BikeDetailsComponent {
         //apo call
         this._bikeService.getCars1(this.id).subscribe(
           (data: any) => {
-            this.bike=data;
+            this.bike = data;
           },
-          (err:any)=>{
+          (err: any) => {
             alert("internal server error");
           }
         )

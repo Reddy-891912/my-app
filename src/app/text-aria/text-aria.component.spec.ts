@@ -8,9 +8,9 @@ describe('TextAriaComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TextAriaComponent ]
+      declarations: [TextAriaComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(TextAriaComponent);
     component = fixture.componentInstance;

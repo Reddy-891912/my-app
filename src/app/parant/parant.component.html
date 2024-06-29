@@ -1,8 +1,5 @@
 <p>parant works!</p>
-
 <label for="">AP :</label>
 <input type="text" [(ngModel)]="ap">
-
 <h1>bp :{{bp}}</h1>
-
 <app-child [ac]="ap" (bEvent)="catch($event)"></app-child>

@@ -8,15 +8,10 @@ import { Component } from '@angular/core';
 export class DataBindingComponent {
 
   public age: number = 20;
-
   public name: string = "Kumar";
-
   public idnian: boolean = true;
-
   public ages: number[] = [10, 20, 30, 40, 50,];
-
   public states: string[] = ["AP", "KA", "TN", "KL", "MH"];
-
   public cities: string[] = ["hyderabad", "kukatpally", "kphb", "andhra"];
 
   public products: any = [
@@ -40,10 +35,5 @@ export class DataBindingComponent {
     alert("Stored");
   };
 
-  public phone:string="+91";
-
-
-
-
-
+  public phone: string = "+91";
 }

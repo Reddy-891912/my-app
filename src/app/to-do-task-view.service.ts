@@ -19,5 +19,5 @@ export class ToDoTaskViewService {
   toDoGetVal() {
     return this.toDoSub$.asObservable();
   }
-  
+
 }

@@ -21,8 +21,8 @@ export class BikesService {
     return this._httpClient.get(this.baseURL + "/" + id);
   }
 
-  editBike(id:any,data:any):Observable<any>{
-    return this._httpClient.put(this.baseURL+"/"+id,data);
+  editBike(id: any, data: any): Observable<any> {
+    return this._httpClient.put(this.baseURL + "/" + id, data);
   }
 
   //filter bar like search text in table
@@ -64,4 +64,5 @@ export class BikesService {
   deletedBikes(id: string): Observable<any> {
     return this._httpClient.delete(this.baseURL + "/" + id);
   }
+  
 }

@@ -6,7 +6,4 @@ import { ToDoTaskViewService } from '../to-do-task-view.service';
   templateUrl: './task-view-parent.component.html',
   styleUrls: ['./task-view-parent.component.css']
 })
-export class TaskViewParentComponent {
-
-
-}
+export class TaskViewParentComponent { }
